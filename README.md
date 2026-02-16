@@ -54,11 +54,11 @@ Server should now be running at: http://127.0.0.1:5000
 
 Environment Variables (.env)
 -------------------------------------
-FLASK_ENV=development
+'''FLASK_ENV=development
 DATABASE_URL=postgresql://<username>:<password>@localhost:5432/delivery_db
 JWT_SECRET_KEY=<your-secret-key>
 REDIS_HOST=localhost
-REDIS_PORT=6379
+REDIS_PORT=6379'''
 
 Project Structure
 -------------------------------------
