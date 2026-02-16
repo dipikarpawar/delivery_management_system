@@ -16,8 +16,15 @@ def create_app():
     jwt.init_app(app)
     migrate.init_app(app, db)
 
+    # Import models so Alembic can detect
+    from models import User
+    from models import Delivery
+    from models import Order
+    from models import Restaurant
+    from models import DeliveryBoy
+
     @app.route("/")
     def index():
-        return "Delivery Management System is running...."
+        return "Delivery Management System is running !"
 
     return app
