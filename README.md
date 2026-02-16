@@ -10,7 +10,7 @@ Framework: Flask
 Auth: JWT
 Database: PostgreSQL
 Cache: Redis (for caching and locks)
-CI/CD: Git + Jenkins```
+CI/CD: Git + Jenkins
 
 Features
 -------------------------------------
@@ -54,16 +54,16 @@ Server should now be running at: http://127.0.0.1:5000
 
 Environment Variables (.env)
 -------------------------------------
-```FLASK_ENV=development
+FLASK_ENV=development
 DATABASE_URL=postgresql://<username>:<password>@localhost:5432/delivery_db
 JWT_SECRET_KEY=<your-secret-key>
 REDIS_HOST=localhost
-REDIS_PORT=6379```
+REDIS_PORT=6379
 
 Project Structure
 -------------------------------------
-```app/models → Database tables
+app/models → Database tables
 app/repositories → DB access layer
 app/services → Business logic (order assignment, caching, etc.)
 app/routes → API endpoints
-app/extensions → DB, Redis, JWT setup```
+app/extensions → DB, Redis, JWT setup
