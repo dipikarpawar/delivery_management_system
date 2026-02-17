@@ -4,6 +4,7 @@ from extensions.db import db
 from extensions.jwt import jwt
 from flask_migrate import Migrate
 
+
 # Initialize Migrate
 migrate = Migrate()
 
@@ -22,6 +23,9 @@ def create_app():
     from models import Order
     from models import Restaurant
     from models import DeliveryBoy
+
+    from routes.user_routes import user_bp
+    app.register_blueprint(user_bp)
 
     @app.route("/")
     def index():
